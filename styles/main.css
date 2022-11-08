@@ -17,23 +17,12 @@
 }
 
 
-.foot{
-    background-color:#5F8CDE ;
-    position: fixed;
-    align-self: end;
-    padding: 0, 4px;
-    bottom: 0;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    opacity: 85%;
 
-
-}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .container{
     padding-bottom: 3em;
 }
@@ -48,6 +37,35 @@ body{
     "f f" 
     ;
 }
+
+@media (max-width:750px){
+    .layout{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    
+        "head head"
+        "side side"
+        "main main"
+        "f f" 
+        ;
+    }
+}
+
+.foot{
+    background-color:#5F8CDE ;
+    position: fixed;
+    align-self: end;
+    padding: 0, 4px;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 85%;
+
+
+}
+
+
 
 .hobH{
     background-color: #87B1FF;
@@ -75,7 +93,6 @@ body{
     text-justify: center;
 
 }
-
 
 
 .review{
@@ -126,18 +143,7 @@ body{
     padding:5px
 }
 
-@media (max-width:750px){
-    .layout{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-    
-        "head head"
-        "side side"
-        "main main"
-        "f f" 
-        ;
-    }
-}
+
 
 .jpn1{
     border-style: dotted;
